@@ -8,20 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
+
+#warning do not forgot to become a delegate of LoadingTableViewController before showing it on the screen
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
+

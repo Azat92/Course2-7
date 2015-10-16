@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+#warning find some way to override start view controller on condition. It is some property on self.window
     return YES;
 }
 

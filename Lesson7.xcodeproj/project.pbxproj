@@ -13,6 +13,8 @@
 		AA21FBC41BCAF6C300928F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA21FBC21BCAF6C300928F56 /* Main.storyboard */; };
 		AA21FBC61BCAF6C300928F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA21FBC51BCAF6C300928F56 /* Assets.xcassets */; };
 		AA21FBC91BCAF6C300928F56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA21FBC71BCAF6C300928F56 /* LaunchScreen.storyboard */; };
+		AA3976D51BD1B749003DCA60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3976D41BD1B749003DCA60 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AA3976D81BD1BAF9003DCA60 /* LoadingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3976D71BD1BAF9003DCA60 /* LoadingTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		AA21FBC51BCAF6C300928F56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA21FBC81BCAF6C300928F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA21FBCA1BCAF6C300928F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3976D31BD1B749003DCA60 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AA3976D41BD1B749003DCA60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AA3976D61BD1BAF9003DCA60 /* LoadingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingTableViewController.h; sourceTree = "<group>"; };
+		AA3976D71BD1BAF9003DCA60 /* LoadingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,13 @@
 		AA21FBB81BCAF6C300928F56 /* Lesson7 */ = {
 			isa = PBXGroup;
 			children = (
-				AA21FBBC1BCAF6C300928F56 /* AppDelegate.h */,
-				AA21FBBD1BCAF6C300928F56 /* AppDelegate.m */,
+				AA21FBC21BCAF6C300928F56 /* Main.storyboard */,
+				AA3976D31BD1B749003DCA60 /* LoginViewController.h */,
+				AA3976D41BD1B749003DCA60 /* LoginViewController.m */,
 				AA21FBBF1BCAF6C300928F56 /* ViewController.h */,
 				AA21FBC01BCAF6C300928F56 /* ViewController.m */,
-				AA21FBC21BCAF6C300928F56 /* Main.storyboard */,
-				AA21FBC51BCAF6C300928F56 /* Assets.xcassets */,
-				AA21FBC71BCAF6C300928F56 /* LaunchScreen.storyboard */,
-				AA21FBCA1BCAF6C300928F56 /* Info.plist */,
+				AA3976D61BD1BAF9003DCA60 /* LoadingTableViewController.h */,
+				AA3976D71BD1BAF9003DCA60 /* LoadingTableViewController.m */,
 				AA21FBB91BCAF6C300928F56 /* Supporting Files */,
 			);
 			path = Lesson7;
@@ -74,6 +79,11 @@
 		AA21FBB91BCAF6C300928F56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA21FBBC1BCAF6C300928F56 /* AppDelegate.h */,
+				AA21FBBD1BCAF6C300928F56 /* AppDelegate.m */,
+				AA21FBC51BCAF6C300928F56 /* Assets.xcassets */,
+				AA21FBC71BCAF6C300928F56 /* LaunchScreen.storyboard */,
+				AA21FBCA1BCAF6C300928F56 /* Info.plist */,
 				AA21FBBA1BCAF6C300928F56 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -149,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3976D51BD1B749003DCA60 /* LoginViewController.m in Sources */,
 				AA21FBC11BCAF6C300928F56 /* ViewController.m in Sources */,
 				AA21FBBE1BCAF6C300928F56 /* AppDelegate.m in Sources */,
 				AA21FBBB1BCAF6C300928F56 /* main.m in Sources */,
+				AA3976D81BD1BAF9003DCA60 /* LoadingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = Lesson7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson7;
@@ -274,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = Lesson7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson7;
@@ -300,6 +314,7 @@
 				AA21FBCF1BCAF6C300928F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
